@@ -6,6 +6,9 @@ a {
     text-decoration: none;
 }
 
+li{
+    list-style-type: none;
+}
 nav {
     padding-left: 5px;
     height: 100px;
@@ -155,7 +158,10 @@ main span {
 .statistics .sec{
     font-size: 50px;
 }
-
+footer{
+    background-color: #000000;
+    color: white;
+}
 @media only screen and (max-width: 1200px) {
     .single, .row-1, .row-2, .row-3 , .in-3{
         display: block;
