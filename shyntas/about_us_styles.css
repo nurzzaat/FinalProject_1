@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: ghostwhite;
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    margin-top: 5%;
+    background-color: aqua;
+}
+
+.wrapper h1{
+    font-size: 43px;
+    margin: 5% 0;
+}
+
+.picture{
+    width: 100%;
+    height: 50vh;
+    background-image: url("./login-photo.jpg");
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.info{
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+}
+
+.info .text{
+    width: 70%;
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500;
+}
+.info .text p{
+    margin: 0 5% 16px 0;
+}
+
+.info .text .grey{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 32px;
+}
+
+.info .text .quote{
+    position: relative;
+}
+.info .text .quote svg{
+    position: absolute;
+}
+.info .text .quote svg:first-of-type{
+    top: 0;
+    left: 0;
+}
+.info .text .quote svg:last-of-type{
+    bottom: 0;
+    right: 6%;
+}
+.info .text .quote .quote_text{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 60px;
+}
+
+.numbers{
+    width: 30%;
+    height: auto;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 2%;
+    margin-top: 6%;
+}
+
+.numbers h1{
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 80px;
+}
+.numbers p{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+}
