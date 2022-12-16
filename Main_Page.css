@@ -54,7 +54,6 @@ nav {
     justify-content: space-between;
     left: 0;
     right: 0;
-    background-color: black;
 }
 
 .header li {
@@ -79,12 +78,95 @@ nav {
 }
 
 .changeColor {
-    background-color: rgb(0, 0, 0 , 0.9);
+    background-color: rgba(199, 72, 1, 0.9);
 }
 
 .back-1 {
     text-align: center;
 }
-iframe{
-    transform: scale(100%);
+
+/*iframe{*/
+/*    transform: scale(100%);*/
+/*}*/
+.in-2 {
+    height: auto;
+    padding-top: 5%;
+    padding-left: 3%;
+}
+
+.single {
+    display: flex;
+    padding-top: 3%;
+}
+
+.single div {
+    width: 100%;
+}
+
+.single img {
+    height: 400px;
+    width: 95%;
+}
+
+.row-1, .row-2, .row-3 {
+    display: flex;
+    padding-top: 2%;
+}
+
+.row-1 div, .row-2 div, .row-3 div {
+    margin-right: -1.4%;
+}
+
+.double div {
+    width: 100%;
+    padding-right: .6%;
+}
+
+.double img {
+    height: 400px;
+    width: 95%;
+}
+
+main h1 {
+    font-size: 40px;
+}
+
+main span {
+    font-size: 20px;
+}
+.in-3{
+    display: flex;
+}
+.in-3 h1{
+    padding-top: 15%;
+    font-size: 100px;
+}
+.in-3 div{
+    text-align: center;
+    width: 100%;
+}
+.statistics{
+    display: block;
+    padding-top: 5%;
+}
+.statistics .san{
+    font-size: 100px;
+}
+.statistics .sec{
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .single, .row-1, .row-2, .row-3 , .in-3{
+        display: block;
+    }
+
+    .single div {
+        padding-top: 4%;
+    }
+
+    .row-1 div, .row-2 div, .row-3 div {
+        padding-top: 4%;
+    }
+
 }
