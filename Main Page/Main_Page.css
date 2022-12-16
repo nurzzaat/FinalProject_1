@@ -6,9 +6,10 @@ a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style-type: none;
 }
+
 nav {
     padding-left: 5px;
     height: 100px;
@@ -111,7 +112,7 @@ nav {
     width: 95%;
 }
 
-.row-1, .row-2, .row-3 {
+.row-1, .row-2, .row-3{
     display: flex;
     padding-top: 2%;
 }
@@ -137,33 +138,59 @@ main h1 {
 main span {
     font-size: 20px;
 }
-.in-3{
+
+.in-3 {
     display: flex;
 }
-.in-3 h1{
+
+.in-3 h1 {
     padding-top: 15%;
     font-size: 100px;
 }
-.in-3 div{
+
+.in-3 div {
     text-align: center;
     width: 100%;
 }
-.statistics{
+
+.statistics {
     display: block;
     padding-top: 5%;
 }
-.statistics .san{
+
+.statistics .san {
     font-size: 100px;
 }
-.statistics .sec{
+
+.statistics .sec {
     font-size: 50px;
 }
-footer{
+
+footer {
     background-color: #000000;
     color: white;
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
 }
-@media only screen and (max-width: 1200px) {
-    .single, .row-1, .row-2, .row-3 , .in-3{
+footer li{
+    padding-top: 3%;
+}
+.f-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.f-1 div{
+    width: 50%;
+    justify-content: space-around;
+}
+footer a {
+    color: white;
+}
+
+@media only screen and (max-width: 1100px) {
+    .single, .row-1, .row-2, .row-3, .in-3 {
         display: block;
     }
 
@@ -173,6 +200,13 @@ footer{
 
     .row-1 div, .row-2 div, .row-3 div {
         padding-top: 4%;
+    }
+    .f-1{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    footer{
+        display: block;
     }
 
 }
