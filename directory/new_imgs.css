@@ -1,0 +1,20 @@
+.news_container{
+    display: flex;
+    max-width: 1000px;
+}
+.news_container img{
+    width: 54vw;
+    border-radius: 12px;
+    height: 28vw;
+
+}
+.news div{
+    max-width: 54vw;
+    font-family: "Inter Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4f5864;
+    margin-bottom: 50px;
+    white-space: pre-line;
+}
