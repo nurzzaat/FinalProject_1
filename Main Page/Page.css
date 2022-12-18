@@ -1,0 +1,98 @@
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    background-color: #fff;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #989898;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+header {
+    background-color: #fff;
+    height: 50px;
+    padding-top: 2px;
+}
+#main {
+    border: 3px solid #ebeff2;
+    border-radius: 12px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-top: 2px;
+    background-color: rgb(5, 161, 5);
+    margin-left: 1%;
+
+}
+
+.header{
+    display:flex;
+}
+#LIVE_ID, #register_id, #Sign_in_id{
+    border: 3px solid #ebeff2;
+    border-radius: 12px;
+    background-color: #fff;
+}
+#Sign_in_id{
+    margin-right: 4%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 18px;
+    padding-top:11px;
+    background-color: #75b6f2;
+    color: #ebeff2;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#LIVE_ID{
+    margin-left: 3%;
+    vertical-align:middle;
+    padding-top: 5px;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+}
+#register_id{
+    margin-right: 1%;
+    padding-top:11px;
+    font-size: 18px;
+    padding-right: 2%;
+    padding-left: 2%;
+    background-color: #fc0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#KOLSAI_ID{
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+

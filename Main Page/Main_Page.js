@@ -1,6 +1,11 @@
-function openNav(){
-    document.getElementById("nav").style.width = "240px";
-}
-function closeNav(){
-    document.getElementById("nav").style.width = "0px";
+function changeNav(){
+    var a = document.getElementById('btn').innerHTML;
+    if(a == '✕'){
+        document.getElementById('btn').innerHTML = '☰';
+        document.getElementById("nav").style.width = "60px";
+    }else{
+        document.getElementById('btn').innerHTML = '✕';
+        document.getElementById("nav").style.width = "240px";
+    }
+
 }
