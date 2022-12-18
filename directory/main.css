@@ -8,9 +8,7 @@ body {
         display: flex;
         flex-wrap: wrap;
     }
-    #objects{
 
-    }
     .right_side_see_all {
         margin-left: 0px;
     }
@@ -290,9 +288,9 @@ img {
 }
 
 #container {
-    margin-left: 8.5vw;
     display: flex;
     height: 100%;
+    padding: 0 8%;
 }
 
 #objects {
@@ -300,7 +298,7 @@ img {
     overflow-x: scroll;
     overflow-y: hidden;
     background-color: rgb(255, 255, 255);
-    width: 70%;
+    width: 90%;
     height: 100%;
     padding-bottom: 2%;
 }
