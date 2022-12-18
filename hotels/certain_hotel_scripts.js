@@ -16,7 +16,10 @@ function switchHearts(){
 function hotel(){
     const hotelID = sessionStorage.getItem("hotelID");
     switch (hotelID) {
-        case "tenir": document.getElementById("hotel_image").src = "./tenir.jpg"; break;
-        case "urta": document.getElementById("hotel_image").src = "./images/urta.png"; break;
+        case "kolsai_lakes_town": document.getElementById("hotel_image").src = "./images/kolsay_lakes_town.jpg"; break;
+        case "manor_kolsay": document.getElementById("hotel_image").src = "./images/manor_kolsay.jpg"; break;
+        case "kolsay_grand": document.getElementById("hotel_image").src = "./images/Kolsay_Grand1.jpg"; break;
+        case "kolsay_nomads": document.getElementById("hotel_image").src = "./images/kolsay_nomads.jpg"; break;
+        case "tau_kolsay": document.getElementById("hotel_image").src = "./images/tau_kolsay.jpeg"; break;
     }
 }

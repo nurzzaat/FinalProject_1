@@ -232,8 +232,6 @@ a {
 }
 .certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs .tariffs_container .one_tariff ul{
     margin: 25px 0 32px;
-    padding: 0;
-/*    check padding pacany*/
 }
 .certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs .tariffs_container .one_tariff ul li{
     list-style-type: none;
