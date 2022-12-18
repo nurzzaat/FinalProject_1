@@ -47,6 +47,7 @@ h1{
 .hotels_wrapper .one_hotel img{
     width: 100%;
     height: 290px;
+    object-fit: cover;
     background: #fff;
     border-radius: 20px;
     overflow: hidden;
