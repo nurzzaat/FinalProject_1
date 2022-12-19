@@ -1,0 +1,162 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #989898;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.header {
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 55px;
+    vertical-align: middle;
+}
+
+#main {
+    border: 3px solid #ebeff2;
+    border-radius: 12px;
+    padding: 2px 0;
+    background-color: rgb(5, 161, 5);
+    margin-left: 0.5%;
+    width: 40px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.id {
+    display: flex;
+    min-width: 200px;
+}
+
+.main {
+    font-size: 25px;
+    cursor: pointer;
+    color: #ebeff2;
+}
+
+#KOLSAI_ID {
+    min-width: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.log-in {
+    font-family: Arial;
+    font-size: 20px;
+    padding: 13px 3% 0 0;
+    min-width: 220px;
+}
+
+.log-in a {
+    color: black;
+}
+
+* {
+    box-sizing: border-box
+}
+
+img {
+    vertical-align: middle;
+}
+
+.f-1 {
+    width: 40%;
+    display: flex;
+}
+
+.f-1 div {
+    width: 50%;
+    min-width: 20%;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: rgba(218, 216, 216, 0.933);
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+}
+
+footer li {
+    padding-top: 3%;
+    color: #7D7B7BF4;
+}
+
+
+.f-1 {
+    width: 40%;
+    display: flex;
+}
+
+.f-1 div {
+    width: 50%;
+    min-width: 20%;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .f-1 {
+        justify-content: center;
+        padding-left: 15%;
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    .f-1 div {
+        min-width: 60%;
+    }
+
+    footer {
+        display: block;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}

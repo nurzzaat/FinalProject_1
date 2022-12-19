@@ -1,4 +1,3 @@
-
 @media only screen and (max-width: 800px) {
     .main_container, #container {
         display: flex;
@@ -27,125 +26,6 @@
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(17, 17, 17, 1);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #f1f1f1;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #989898;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-li {
-    list-style-type: none;
-}
-
-.header {
-    display: flex;
-    left: 0;
-    right: 0;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 55px;
-    vertical-align: middle;
-}
-
-#main {
-    border: 3px solid #ebeff2;
-    border-radius: 12px;
-    padding: 2px 0;
-    background-color: rgb(5, 161, 5);
-    margin-left: .5%;
-    width: 40px;
-    text-align: center;
-}
-
-.id {
-    display: flex;
-    min-width: 200px;
-}
-
-.main {
-    font-size: 25px;
-    cursor: pointer;
-    color: #ebeff2;
-}
-
-
-.header {
-    display: flex;
-}
-
-#register_id, #Sign_in_id {
-    border: 3px solid #ebeff2;
-    border-radius: 12px;
-    min-width: 80px;
-    background-color: #fff;
-}
-
-#Sign_in_id {
-    margin-right: 2%;
-    padding-left: 1%;
-    padding-right: 1%;
-    font-size: 18px;
-    padding-top: 11px;
-    background-color: #75b6f2;
-    color: #ebeff2;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-#register_id {
-    margin-right: 1%;
-    padding-top: 11px;
-    font-size: 18px;
-    padding-right: 1%;
-    padding-left: 1%;
-    background-color: #fc0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-#KOLSAI_ID {
-    min-width: 200px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-    box-sizing: border-box
-}
-
-img {
-    vertical-align: middle;
 }
 
 .slideshow-container {
@@ -258,7 +138,6 @@ img {
     background-color: #fff;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     transition: .3s;
-    cursor: pointer;
 }
 
 .main_container img:hover {
@@ -339,6 +218,7 @@ hr {
     font-size: 19px;
     margin-top: 5%;
     cursor: pointer;
+    min-width: 76px;
 }
 
 .date_div {
@@ -370,13 +250,12 @@ hr {
 }
 
 
-
 h1 {
     top: 8%;
     position: absolute;
     padding-left: 8%;
     padding-right: 8%;
-    font-size: 2.4vw;
+    font-size: 40px;
     font-family: Inter Regular, sans-serif;
     color: #ffffffdf;
 }
@@ -404,6 +283,20 @@ h3 {
     padding-left: 3%;
 }
 
+.in-2 img {
+    height: 400px;
+    width: 95%;
+    border-radius: 25px;
+    box-shadow: 0px 2px 7px #b0d3ee44;
+    transition: .3s;
+    border: 0.1px solid #b0d3eef9;
+}
+
+.in-2 img:hover {
+    box-shadow: 0px 7px 14px #b0d3eeda;
+    transform: scale(1.05, 1.05);
+}
+
 .single {
     display: flex;
     padding-top: 3%;
@@ -413,25 +306,12 @@ h3 {
     width: 100%;
 }
 
-.in-2 img {
-    height: 400px;
-    width: 95%;
-    border-radius: 25px;
-    box-shadow: 0px 2px 7px #b0d3ee44;
-    transition: .3s;
-    border: 0.1px solid #b0d3eef9;
-}
-.in-2 img:hover{
-    box-shadow: 0px 7px 14px #b0d3eeda;
-    transform: scale(1.05, 1.05);
-}
-
-.row-1, .row-2, .row-3 {
+.row-1 {
     display: flex;
     padding-top: 2%;
 }
 
-.row-1 div, .row-2 div, .row-3 div {
+.row-1 div {
     margin-right: -1.4%;
 }
 
@@ -439,272 +319,9 @@ h3 {
     width: 100%;
     padding-right: .6%;
 }
-.f-1 {
-    width: 40%;
-    display: flex;
-}
-
-.f-1 div {
-    width: 50%;
-    min-width: 20%;
-}
-
-a{
-    text-decoration: none;
-}
-footer {
-    background-color: #1f1f1f;
-    color: rgba(218, 216, 216, 0.933);
-    padding: 2% 0;
-    display: flex;
-    justify-content: center;
-    border-radius: 15px 15px 0 0;
-}
-
-footer li {
-    padding-top: 3%;
-    list-style-type: none;
-}
-
-footer a {
-    color: rgba(125, 123, 123, 0.959);
-    text-decoration: none;
-}
-
-/*----------------------------------------------------------------------------------------*/
-body {
-    font-family: "Lato", sans-serif;
-    transition: background-color .5s;
-    background-color: white;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 1);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #f1f1f1;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #989898;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    border: 3px solid #ebeff2;
-    border-radius: 12px;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-    padding-top: 2px;
-    background-color: rgb(5, 161, 5);
-    margin-left: 1%;
-    transition: 0.5s;
-
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
-}
-
-.headerFixed {
-    background-color: rgba(0, 0, 0, .9);
-    height: 50px;
-    padding-top: 2px;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-
-.header {
-    display: flex;
-}
-
-#LIVE_ID, #register_id, #Sign_in_id {
-    border: 3px solid #ebeff2;
-    border-radius: 12px;
-    background-color: #fff;
-}
-
-#Sign_in_id {
-    margin-right: 4%;
-    padding-left: 1%;
-    padding-right: 1%;
-    font-size: 18px;
-    padding-top: 11px;
-    background-color: #75b6f2;
-    color: #ebeff2;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-#LIVE_ID {
-    margin-left: 3%;
-    vertical-align: middle;
-    padding-top: 5px;
-    padding-right: 0.5%;
-    padding-left: 0.5%;
-}
-
-#register_id {
-    margin-right: 1%;
-    padding-top: 11px;
-    font-size: 18px;
-    padding-right: 2%;
-    padding-left: 2%;
-    background-color: #fc0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-#KOLSAI_ID {
-    padding-left: 1%;
-    padding-right: 1%;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-/*---------------------main-------------------------------*/
-.page_restaurant {
-    z-index: 1;
-}
-
-.text_title, .text_reklame {
-    color: black;
-    font-family: HelveticaNeueCyr, Helvetica Neue, Helvetica, Arial, sans-serif;
-
-}
-
-.container {
-    padding: 3% 4%;
-}
-
-/*------------Picture-------------*/
-.row {
-    display: flex;
-    justify-content: space-around;
-    margin: 5% -3%;
-
-}
-
-.col {
-    display: block;
-    width: 27%;
-    height: 15rem;
-    background-color: rgb(0, 0, 0, 0.2);
-    margin: 2% 0.25%;
-    position: relative;
-    border-radius: 20px;
-    /* z-index: ; */
-
-
-}
-
-.col_1 {
-    width: 27%;
-    height: 15rem;
-}
-
-.col_2 {
-    width: 45%;
-    height: 15rem;
-}
-
-.restourand_img {
-
-
-    position: absolute;
-    background-size: cover;
-    background-position: center center;
-
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-
-    border-radius: 20px;
-
-
-}
-
-.media_content {
-    position: absolute;
-    color: white;
-    font-size: 26px;
-    line-height: 32px;
-    padding: 32px;
-}
-
-.media_content_wrap {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-bottom: 24px;
-    position: relative;
-}
-
-
-footer {
-    background-color: #1f1f1f;
-    color: rgba(218, 216, 216, 0.933);
-    padding: 2% 0;
-    display: flex;
-    justify-content: center;
-    border-radius: 15px 15px 0 0;
-}
-
-footer li {
-    padding-top: 3%;
-    list-style-type: none;
-}
-
-.f-1 {
-    width: 40%;
-    display: flex;
-}
-
-.f-1 div {
-    width: 50%;
-    min-width: 20%;
-}
-
-footer a {
-    color: rgba(125, 123, 123, 0.959);
-    text-decoration: none;
-}
-
-.span span {
-    padding-left: 5%;
-}
 
 @media only screen and (max-width: 1100px) {
-    .single, .row-1, .row-2, .row-3, .in-3 {
+    .single, .row-1 {
         display: block;
     }
 
@@ -712,40 +329,7 @@ footer a {
         padding-top: 4%;
     }
 
-    .row-1 div, .row-2 div, .row-3 div {
+    .row-1 div {
         padding-top: 4%;
-    }
-
-    .f-1 {
-        justify-content: center;
-        padding-left: 15%;
-        width: 80%;
-        margin-bottom: 5%;
-    }
-
-    .f-1 div {
-        min-width: 60%;
-    }
-
-    footer {
-        display: block;
-    }
-
-}
-
-@media (max-width: 1000px) {
-    .row {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-
-    }
-
-    .col_1 {
-        width: 100%;
-    }
-
-    .col_2 {
-        width: 100%;
     }
 }
