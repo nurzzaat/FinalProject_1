@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter Regular", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    background-color: #F8F9FB;
+}
+
+.certain_hotel_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 1100px;
+    padding: 24px 0;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #4f5864;
+}
+.certain_hotel_wrapper h4{
+    color: #4f5964;
+}
+.certain_hotel_wrapper h1{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #212225;
+    font-family: "Inter Semibold", sans-serif;
+    font-size: 32px;
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+.certain_hotel_wrapper h1 p{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    grid-gap: 8px;
+    gap: 8px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4f5864;
+    cursor: pointer;
+}
+.certain_hotel_wrapper h1 p svg{
+    width: 22px;
+    height: 18px;
+}
+.certain_hotel_wrapper .about_hotel{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 24px;
+}
+.certain_hotel_wrapper .about_hotel .about_images{
+    max-width: 1200px;
+    max-height: 440px;
+    margin-bottom: 64px;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.certain_hotel_wrapper .about_hotel .about_images img{
+    width: 100%;
+    height: 100%;
+}
+
+.certain_hotel_wrapper .about_hotel .about_data{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.certain_hotel_wrapper .about_hotel .about_data .about_info{
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.certain_hotel_wrapper .about_hotel .about_data .about_info .about_info_hotel{
+    margin-bottom: 48px;
+    max-width: 746px;
+}
+.certain_hotel_wrapper .about_hotel .about_data .about_info .about_info_hotel h2{
+    margin-bottom: 25px;
+}
+.certain_hotel_wrapper .about_hotel .about_data .about_info .about_info_hotel h4{
+    font-weight: 400;
+    line-height: 160%;
+    color: #4f5864;
+}
+
+.certain_hotel_wrapper .about_hotel .about_data .about_info .about_info_contact{
+    margin-bottom: 50px;
+}
+.certain_hotel_wrapper .about_hotel .about_data .about_info .about_info_contact h2{
+    margin-bottom: 25px;
+}
+.certain_hotel_wrapper .about_hotel .about_data .about_info .about_info_contact ul{
+    color: #4f5864;
+}
+.certain_hotel_wrapper .about_hotel .about_data .about_info .about_info_contact ul li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 16px;
+}
+.certain_hotel_wrapper .about_hotel .about_data .about_info .about_info_contact .contact-img{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #75b6f2;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.certain_hotel_wrapper .about_hotel .about_data .about_info .about_info_advantages{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+.certain_hotel_wrapper .about_hotel .about_data .about_info .about_info_advantages h2{
+    margin-bottom: 25px;
+}
+.certain_hotel_wrapper .about_hotel .about_data .about_info .about_info_advantages .features{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    gap: 10px;
+}
+.certain_hotel_wrapper .about_hotel .about_data .about_info .about_info_advantages .features .one_feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(33.33333% - 10px);
+    height: 100px;
+    background: white;
+    border-radius: 16px;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #4f5864;
+    text-align: center;
+    padding: 0 12px;
+}
+.certain_hotel_wrapper .about_hotel .about_data .about_info .about_info_advantages .features .one_feature .feature_img{
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper{
+    min-width: 416px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+}
+.certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs{
+    width: 80%;
+    display: flex;
+    margin-bottom: 48px;
+    flex-direction: column;
+}
+.certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs h2{
+    margin-bottom: 25px;
+}
+.certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs .tariffs_container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    grid-gap: 24px;
+    gap: 24px;
+}
+.certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs .tariffs_container .one_tariff{
+    width: 290px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs .tariffs_container .one_tariff .tariff_img{
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs .tariffs_container .one_tariff .tariff_img img{
+    width: 100%;
+    height: 100%;
+}
+.certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs .tariffs_container .one_tariff .title{
+    font-weight: 500;
+    font-size: 20px;
+    color: #212225;
+}
+.certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs .tariffs_container .one_tariff h4{
+    margin: 16px 0;
+    font-weight: 400;
+    font-size: 18px;
+    color: #6d7784;
+}
+.certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs .tariffs_container .one_tariff ul{
+    margin: 25px 0 32px;
+}
+.certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs .tariffs_container .one_tariff ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4f5864;
+}
+.certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs .tariffs_container .one_tariff ul li img{
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+.certain_hotel_wrapper .about_hotel .about_data .tariffs_wrapper .tariffs .tariffs_container .one_tariff h3{
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1244px){
+    .certain_hotel_wrapper .about_hotel .about_images{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .certain_hotel_wrapper h4{
+        margin-left: 5%;
+    }
+    .certain_hotel_wrapper h1{
+        margin-left: 5%;
+    }
+}
+

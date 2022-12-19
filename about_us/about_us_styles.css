@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: ghostwhite;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+nav {
+    padding-left: 5px;
+    height: auto;
+}
+.nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.nav a{
+    padding: 0 8px 8px 17px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.nav a:hover {
+    color: #f1f1f1;
+}
+.nav .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+}
+.openbtn {
+    cursor: pointer;
+    font-size: 36px;
+    padding-left: 14px;
+}
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+}
+.header li {
+    list-style-type: none;
+    color: white;
+}
+.logo {
+    padding-top: 5px;
+    font-size: 30px;
+    font-family: Impact, serif;
+}
+.log-in {
+    font-family: Arial, serif;
+    font-size: 20px;
+    padding: 15px 20px 0 0;
+}
+.log-in a {
+    color: white;
+}
+.changeColor {
+    background-color: rgba(199, 72, 1, 0.9);
+}
+.back-1 {
+    text-align: center;
+}
+.in-2 {
+    height: auto;
+    padding-top: 5%;
+    padding-left: 3%;
+}
+
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    background-color: #f1eb89;
+    background-image: linear-gradient(45deg, #f1eb89 17%, #26a2c2 65%);
+}
+
+.wrapper h1{
+    font-size: 43px;
+    margin: 5% 0;
+}
+
+.picture{
+    width: 100%;
+    height: 50vh;
+    background-image: url("./login-photo.jpg");
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.info{
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+}
+
+.info .text{
+    width: 70%;
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500;
+}
+.info .text p{
+    margin: 0 5% 16px 0;
+}
+
+.info .text .grey{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 32px;
+}
+
+.info .text .quote{
+    position: relative;
+}
+.info .text .quote svg{
+    position: absolute;
+    color: black;
+}
+.info .text .quote svg:first-of-type{
+    top: 0;
+    left: 0;
+}
+.info .text .quote svg:last-of-type{
+    bottom: 0;
+    right: 6%;
+}
+.info .text .quote .quote_text{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 60px;
+}
+
+.numbers{
+    width: 30%;
+    height: auto;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 2%;
+    margin-top: 6%;
+}
+
+.numbers h1{
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 80px;
+}
+.numbers p{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+    color: #363636;
+}
+
+
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+}
+footer li{
+    padding-top: 3%;
+}
+.f-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.f-1 div{
+    width: 50%;
+    justify-content: space-around;
+}
+footer a {
+    color: white;
+}

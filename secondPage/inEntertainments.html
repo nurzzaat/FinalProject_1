@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InEntertainment</title>
+
+  <link rel="stylesheet" href="./homepage.css">
+  <script src="./Entertainments.js"></script>
+  <link rel="stylesheet" href="inrestaurants.css">
+  <script src="./inrestaurants.js"></script>
+  <script src="./homepage.js"></script>
+
+</head>
+<body onload="hotel()">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="./homepage.html">Main</a>
+  <a href="./restaurants.html">Restaurant</a>
+  <a href="ticket.html">Tickets</a>
+  <a href="./Entertainments.html">Entertainments</a>
+  <a href="./hotels.html">Hotel</a>
+  <a href="./about_us.html">Info</a>
+</div><span class="header changeColor">
+    <div>
+        <li id="main"><span class="main" onclick="openNav()">&#9776;</span></li>
+    </div>
+    <div>
+        <li id="KOLSAI_ID" id="KOLSAI_ID"><img class="logo" src="blacklogo.PNG">S H Y M B U L A K</li>
+    </div>
+    <div class="id">
+        <li id="register_id">Register</li>
+        <li id="Sign_in_id">Sign in</li>
+    </div>
+</span>
+
+<div class="Newsid">Entertainments</div>
+
+<div class="news_container">
+  <div class="news">
+    <img id="news_image" src="https://www.datocms-assets.com/55179/1647270109-cf6523a1a5ff-img_5012.jpg">
+    <div class="hotel-data">
+      <div class="hotel-data-desc">11.12.22<p></p>On 09.12.22, operation of the Medeu-Shymbulak cable cars was
+        suspended for 45 minutes from 16:30 to 17:15 due to technical problems. The reason for stoppage was the
+        failure of the contactor of the cable cars technical condition monitoring system, whereupon the data on
+        the condition ceased to be received by the central station, resulting in stoppage of the cable cars.
+        <p></p>
+        At 17:15, for guests transportation who were in the Medeu-Shymbulak cable cars at the moment of
+        stoppage, readjustment and start-up on the standby mode was made until the technical problems were
+        completely eliminated by the technical team of "Shymbulak" resort.<p></p>
+        At 18:30, "Shymbulak" resort technical team fully eliminated the faults and the cable cars continued its
+        normal operation. <p></p>
+        Free tea was provided to the guests, who were in line for the ride, and restaurants continued its
+        operation so that the resort guests could wait for their turn to go down in warm environment. Also
+        transfer by company vehicles to "Medeu" was arranged for the guests with children. <p></p>
+        At the moment necessary measures have been taken to reduce the risk of recurrence of such situations and
+        discomfort of resort guests in such incidents, including the work on installation of rescue - suitcases
+        (rescue blanket, self-heating insoles; dry rations; activated carbon; antipyretic; anti-allergy
+        medicine; anti-diarrhea medicine; eye drops;) for emergency situations in each cabin of the cable cars.
+        The resort administration expresses its apologies for the inconvenience caused.
+      </div>
+    </div>
+  </div>
+
+  <div class="more">
+    <a class="nuxt-link-active">
+      <div class="span">Other news</div>
+    </a>
+    <div class="more-news">
+      <div class="news-items">
+        <a class="news-item nuxt-link-active">
+          <div class="date lit">09.11.22</div>
+          <hr>
+          <a href="#" id="id3" onclick="callHotel(id)">
+            <div class="name">What Is a Season Pass?</div>
+          </a>
+        </a>
+      </div>
+      <div class="news-items">
+        <a class="news-item nuxt-link-active">
+          <div class="date lit">09.11.22</div>
+          <hr>
+          <a href="#" id="id4" onclick="callHotel(id)">
+            <div class="name">Season is open!</div>
+          </a>
+        </a>
+      </div>
+      <div class="news-items">
+        <a class="news-item nuxt-link-active">
+          <div class="date lit">09.11.22</div>
+          <hr>
+          <a href="#" id="id6" onclick="callHotel(id)">
+            <div class="name">How to Prepare for Skiing/Snowboarding</div>
+          </a>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="f-1">
+    <div>
+      <b>Our restaurants</b><br><br>
+      <li><a href="">Oblaka restobar</a></li>
+      <li><a href="">Base camp Yurta</a></li>
+      <li><a href="">Marrone Rosso</a></li>
+      <li><a href="">Saray bar</a></li>
+      <li><a href="">Paul</a></li>
+      <li><a href="">Rifugio del Monte</a></li>
+    </div>
+    <div>
+      <b>Hotels</b><br><br>
+      <li><a href="">Tenir Eco Hotels</a></li>
+      <li><a href="">S.N.e.G.</a></li>
+      <li><a href="">Base camp Yurta</a></li>
+      <li><a href="">Bianca high-mountain chalets</a></li>
+      <li><a href="">Shymbulak Resort Hotel</a></li>
+    </div>
+  </div>
+  <div class="f-1">
+    <div>
+      <b>Entertainments</b><br><br>
+      <li><a href="">Alpine park</a></li>
+      <li><a href="">Paraplane</a></li>
+      <li><a href="">Snowmobile and ATV rides</a></li>
+      <li><a href="">Horse rides</a></li>
+      <li><a href="">Rope park Medeu</a></li>
+      <li><a href="">Gorilla Zipline</a></li>
+      <li><a href="">Rope park Shymbulak</a></li>
+      <li><a href="">Balloon track</a></li>
+
+    </div>
+    <div>
+      <b>Contact us</b><br><br>
+      <a href="">E-Mail: orta@edu.kz</a><br><br>
+      <a href="">Phone number: +7 727 331 77 77</a><br><br>
+      <a href="">Address: st. Kerey, Zhanibek Khandar 558/1, Almaty</a><br><br>
+      <div>
+                    <span><a href=""><img
+                            src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/facebook-132.png"
+                            width="35"></a></span>
+        <span><a href=""><img
+                src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/twitter-158.png"
+                width="35"></a></span>
+        <span><a href=""><img
+                src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/instagram-47.png"
+                width="35"></a></span>
+        <span><a href=""><img
+                src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/youtube-117.png"
+                width="35"></a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

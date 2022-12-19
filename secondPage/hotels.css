@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contents{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter Regular", sans-serif;
+    font-style: normal;
+    padding-top: 3%;
+}
+.contents h1{
+    font-weight: 600;
+    color: #212225;
+    font-family: "Inter Semibold", sans-serif;
+    font-size: 32px;
+    margin: 1% 0;
+}
+.hotels_wrapper{
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-gap: 24px;
+    gap: 24px;
+}
+
+.hotels_wrapper .hotel-link{
+    width: calc(33.33333% - 20px);
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.hotels_wrapper .hotel-link .one_hotel{
+    cursor: pointer;
+    width: 100%;
+}
+
+.hotels_wrapper .one_hotel img{
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 16px;
+    transition: .2s;
+}
+
+.hotels_wrapper .hotel-link .one_hotel .hotel-data{
+    display: block;
+}
+
+.hotels_wrapper .hotel-link .one_hotel .hotel-data .hotel-data-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 21px;
+    color: #212225;
+    margin-bottom: 8px;
+}
+.hotels_wrapper .hotel-link .one_hotel .hotel-data .hotel-data-les{
+    color: #6d7784;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 1164px){
+    .hotels_wrapper .hotel-link{
+        width: calc(50% - 12px);
+    }
+}
+@media (max-width: 760px){
+    .hotels_wrapper .hotel-link{
+        width: 100%;
+    }
+}
