@@ -1,0 +1,259 @@
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #989898;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.header {
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 55px;
+    vertical-align: middle;
+}
+
+#main {
+    border: 3px solid #ebeff2;
+    border-radius: 12px;
+    padding: 2px 0;
+    background-color: rgb(5, 161, 5);
+    margin-left: .5%;
+    width: 40px;
+    text-align: center;
+}
+
+.id {
+    display: flex;
+    min-width: 200px;
+}
+
+.main {
+    font-size: 25px;
+    cursor: pointer;
+    color: #ebeff2;
+}
+
+
+.header {
+    display: flex;
+}
+
+#register_id, #Sign_in_id {
+    border: 3px solid #ebeff2;
+    border-radius: 12px;
+    min-width: 80px;
+    background-color: #fff;
+}
+
+#Sign_in_id {
+    margin-right: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 18px;
+    padding-top: 11px;
+    background-color: #75b6f2;
+    color: #ebeff2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#register_id {
+    margin-right: 1%;
+    padding-top: 11px;
+    font-size: 18px;
+    padding-right: 1%;
+    padding-left: 1%;
+    background-color: #fc0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#KOLSAI_ID {
+    min-width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    /*background-color: #f1eb89;*/
+    /*background-image: linear-gradient(45deg, #f1eb89 17%, #26a2c2 65%);*/
+}
+
+.wrapper h1 {
+    font-size: 43px;
+    margin: 3% 0;
+}
+
+.picture {
+    width: 100%;
+    height: 50vh;
+    background-image: url("../about_us/login-photo.jpg");
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.info {
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+}
+
+.info .text {
+    width: 70%;
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500;
+}
+
+.info .text p {
+    margin: 0 5% 16px 0;
+}
+
+.info .text .grey {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 32px;
+}
+
+.info .text .quote {
+    position: relative;
+}
+
+.open {
+    width: 35px;
+}
+
+.close {
+    width: 35px;
+    rotate: 180deg;
+}
+
+.info .text .quote .quote_text {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0px 60px;
+}
+
+.numbers {
+    width: 30%;
+    height: auto;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 2%;
+    margin-top: 6%;
+}
+
+.numbers h1 {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 80px;
+}
+
+.numbers p {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+    color: #363636;
+}
+
+
+footer {
+    background-color: #1f1f1f;
+    color: rgba(218, 216, 216, 0.933);
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.f-1 {
+    width: 40%;
+    display: flex;
+}
+
+.f-1 div {
+    width: 50%;
+    min-width: 20%;
+}
+
+footer li {
+    padding-top: 3%;
+    list-style-type: none;
+}
+
+footer a {
+    color: rgba(125, 123, 123, 0.959);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .f-1 {
+        justify-content: center;
+        padding-left: 15%;
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    .f-1 div {
+        min-width: 60%;
+    }
+
+    footer {
+        display: block;
+    }
+}
