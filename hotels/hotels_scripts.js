@@ -1,24 +1,29 @@
+
 function callHotel(id) {
+    $.ajax({
+        url:'session.php',
+        type:'POST',
+        data:{current_hotel: id},
+        success:function(response){
+            console.log(response);
+        }
+
+    });
     switch (id) {
-        case "kolsay_lakes_town":
-            sessionStorage.setItem("hotelID", "kolsay_lakes_town");
-            document.getElementById("kolsay_lakes_town").href = "./certain_hotel.html";
+        case "Kolsay Lakes Town":
+            document.getElementById("Kolsay Lakes Town").href = "./check.php";
             break;
-        case "manor_kolsay":
-            sessionStorage.setItem("hotelID", "manor_kolsay");
-            document.getElementById("manor_kolsay").href = "./certain_hotel.html";
+        case "Manor Kolsay":
+            document.getElementById("Manor Kolsay").href = "./check.php";
             break;
-        case "kolsay_grand":
-            sessionStorage.setItem("hotelID", "kolsay_grand");
-            document.getElementById("kolsay_grand").href = "./certain_hotel.html";
+        case "Kolsay Grand":
+            document.getElementById("Kolsay Grand").href = "./check.php";
             break;
-        case "kolsay_nomads":
-            sessionStorage.setItem("hotelID", "kolsay_nomads");
-            document.getElementById("kolsay_nomads").href = "./certain_hotel.html";
+        case "Kolsay Nomads":
+            document.getElementById("Kolsay Nomads").href = "./check.php";
             break;
-        case "tau_kolsay":
-            sessionStorage.setItem("hotelID", "tau_kolsay");
-            document.getElementById("tau_kolsay").href = "./certain_hotel.html";
+        case "Tau Kolsay":
+            document.getElementById("Tau Kolsay").href = "./check.php";
             break;
     }
 }
