@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="./restaurants.css">
+    <link rel="stylesheet" href="./homepage.css">
+
+    <script src="./homepage.js"></script>
+    <script src="./restaurants.js"></script>
+
+
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="./homepage.html">Main</a>
+    <a href="./restaurants.html">Restaurant</a>
+    <a href="ticket.html">Tickets</a>
+    <a href="./Entertainments.html">Entertainments</a>
+    <a href="./hotels.html">Hotel</a>
+    <a href="./about_us.html">Info</a>
+</div><span class="header changeColor">
+    <div>
+        <li id="main"><span class="main" onclick="openNav()">&#9776;</span></li>
+    </div>
+    <div>
+        <li id="KOLSAI_ID" id="KOLSAI_ID"><img class="logo" src="blacklogo.PNG">S H Y M B U L A K</li>
+    </div>
+    <div class="id">
+        <li id="register_id">Register</li>
+        <li id="Sign_in_id">Sign in</li>
+    </div>
+</span>
+
+<div class="Newsid">Restaurants</div>
+
+<div class="news_wrapper">
+    <a href="#" class="hotel-link" id="id1" onclick="callHotel(id)">
+        <div class="one_hotel">
+            <img src="https://cdn.shymbulak-dev.com/media/01cc68c90495bcf35af0d9a51e452607.png" alt="photo">
+            <div class="hotel-data">
+                <div class="hotel-data-desc">S.N.e.G.</div>
+                <div class="hotel-data-les">from 5 500 ₸</div>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="hotel-link" id="id2" onclick="callHotel(id)">
+        <div class="one_hotel">
+            <img src="https://cdn.shymbulak-dev.com/media/7e7d0306d5484e188d9109441f37895f.png"
+                 alt="photo">
+            <div class="hotel-data">
+                <div class="hotel-data-desc">Chalet</div>
+                <div class="hotel-data-les">from 5 500 ₸</div>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="hotel-link" id="id3" onclick="callHotel(id)">
+        <div class="one_hotel">
+            <img src="https://cdn.shymbulak-dev.com/media/5f2290bca043b36077864287b36e13ba.png" alt="photo">
+            <div class="hotel-data">
+                <div class="hotel-data-desc">Assorti</div>
+                <div class="hotel-data-les">from 5 500 ₸</div>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="hotel-link" id="id4" onclick="callHotel(id)">
+        <div class="one_hotel">
+            <img src="https://cdn.shymbulak-dev.com/media/a9f0247a5330ac3bc73c216ceb669b7b.png"
+                 alt="photo">
+            <div class="hotel-data">
+                <div class="hotel-data-desc">Oblaka restobar</div>
+                <div class="hotel-data-les">from 4 000 ₸</div>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="hotel-link" id="id5" onclick="callHotel(id)">
+        <div class="one_hotel">
+            <img src="https://cdn.shymbulak-dev.com/media/1c1e5292f6678c39e869b77fbba9f219.png"
+                 alt="photo">
+            <div class="hotel-data">
+                <div class="hotel-data-desc">Base camp Yurta</div>
+                <div class="hotel-data-les">from 4 000 ₸</div>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="hotel-link">
+        <div class="one_hotel" id="id6" onclick="callHotel(id)">
+            <img src="https://cdn.shymbulak-dev.com/media/03c5d0ee9e8a2a4e61a58c222b91d7d5.png"
+                 alt="photo">
+            <div class="hotel-data">
+                <div class="hotel-data-desc">Marrone Rosso</div>
+                <div class="hotel-data-les">from 3 000 ₸</div>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="hotel-link" id="id7" onclick="callHotel(id)">
+        <div class="one_hotel">
+            <img src="https://cdn.shymbulak-dev.com/media/42be88bf2d78693b3743f2b4e3a4b68b.png" alt="photo">
+            <div class="hotel-data">
+                <div class="hotel-data-desc">Saray bar</div>
+                <div class="hotel-data-les">from 5 500 ₸</div>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="hotel-link" id="id8" onclick="callHotel(id)">
+        <div class="one_hotel">
+            <img src="https://cdn.shymbulak-dev.com/media/29a2cc180ba33cbd40d08492808d2422.png"
+                 alt="photo">
+            <div class="hotel-data">
+                <div class="hotel-data-desc">Paul</div>
+                <div class="hotel-data-les">from 3 000 ₸</div>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="hotel-link" id="id9" onclick="callHotel(id)">
+        <div class="one_hotel">
+            <img src="https://cdn.shymbulak-dev.com/media/caa2bb1acdee9558388d0141a6eff698.jpg" alt="photo">
+            <div class="hotel-data">
+                <div class="hotel-data-desc">Rifugio del Monte</div>
+                <div class="hotel-data-les">from 5 000 ₸</div>
+            </div>
+        </div>
+    </a>
+</div>
+
+<footer>
+    <div class="f-1">
+        <div>
+            <b>Our restaurants</b><br><br>
+            <li><a href="">Oblaka restobar</a></li>
+            <li><a href="">Base camp Yurta</a></li>
+            <li><a href="">Marrone Rosso</a></li>
+            <li><a href="">Saray bar</a></li>
+            <li><a href="">Paul</a></li>
+            <li><a href="">Rifugio del Monte</a></li>
+        </div>
+        <div>
+            <b>Hotels</b><br><br>
+            <li><a href="">Tenir Eco Hotels</a></li>
+            <li><a href="">S.N.e.G.</a></li>
+            <li><a href="">Base camp Yurta</a></li>
+            <li><a href="">Bianca high-mountain chalets</a></li>
+            <li><a href="">Shymbulak Resort Hotel</a></li>
+        </div>
+    </div>
+    <div class="f-1">
+        <div>
+            <b>Entertainments</b><br><br>
+            <li><a href="">Alpine park</a></li>
+            <li><a href="">Paraplane</a></li>
+            <li><a href="">Snowmobile and ATV rides</a></li>
+            <li><a href="">Horse rides</a></li>
+            <li><a href="">Rope park Medeu</a></li>
+            <li><a href="">Gorilla Zipline</a></li>
+            <li><a href="">Rope park Shymbulak</a></li>
+            <li><a href="">Balloon track</a></li>
+
+        </div>
+        <div>
+            <b>Contact us</b><br><br>
+            <a href="">E-Mail: orta@edu.kz</a><br><br>
+            <a href="">Phone number: +7 727 331 77 77</a><br><br>
+            <a href="">Address: st. Kerey, Zhanibek Khandar 558/1, Almaty</a><br><br>
+            <div>
+                    <span><a href=""><img
+                            src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/facebook-132.png"
+                            width="35"></a></span>
+                <span><a href=""><img
+                        src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/twitter-158.png"
+                        width="35"></a></span>
+                <span><a href=""><img
+                        src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/instagram-47.png"
+                        width="35"></a></span>
+                <span><a href=""><img
+                        src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/youtube-117.png"
+                        width="35"></a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
