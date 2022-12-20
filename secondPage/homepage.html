@@ -13,14 +13,15 @@
     <script src="./news.js"></script>
     <script src="./innews.js"></script>
 </head>
-<body>
+<body onload="checkUser()">
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="./homepage.html">Main</a>
     <a href="./restaurants.html">Restaurant</a>
     <a href="./ticket.html">Tickets</a>
     <a href="./Entertainments.html">Entertainments</a>
-    <a href="./hotels.html">Hotel</a>
+    <a href="../hotels/hotels.php">Hotel</a>
+
     <a href="about_us.html">Info</a>
 </div>
 <span class="header">
@@ -32,7 +33,7 @@
                                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaiibfj8vazQvlEDPUJzC36huDhRhzUn048J56c0mlIZfGqkqQ3KKvcfJcdRLX0vT3_4M&usqp=CAU">A I</li>
     </div>
     <div class="id">
-        <li class="log-in"><a href="">Nurzat Tynyshbekov</a></li>
+        <li class="log-in"><a href=""><span id="curr_user"></span><span class="smile">&#9786;</span></a></li>
     </div>
 </span>
 <div class="main_container">
@@ -85,20 +86,24 @@
     </div>
     <div class="half_container">
         <div class="row_container_1">
-            <div><img class="cont" src="https://tengritravel.kz/userdata/news/2022/news_476825/thumb_m/photo_405723.jpeg">
-                <h2>About resort</h2>
+            <div>
+                <a href="./about_us.html" style="color: black"><img class="cont" src="https://tengritravel.kz/userdata/news/2022/news_476825/thumb_m/photo_405723.jpeg">
+                <h2>About resort</h2></a>
             </div>
-            <div><img class="cont" src="https://images.squarespace-cdn.com/content/v1/55362ff6e4b04d66273b1ad8/1429941836055-NWRSZG0KPQ91N7M0U6IW/How+do+I+get+there+sign.jpg?format=1500w">
-                <h2>How to get there</h2>
+            <div>
+                <a href="./about_us.html" style="color: black"><img class="cont" src="https://images.squarespace-cdn.com/content/v1/55362ff6e4b04d66273b1ad8/1429941836055-NWRSZG0KPQ91N7M0U6IW/How+do+I+get+there+sign.jpg?format=1500w">
+                <h2>How to get there</h2></a>
             </div>
         </div>
         <div class="row_container_1">
-            <div><img class="cont"
+            <div>
+                <a href="./ticket.html" style="color: black"><img class="cont"
                       src="https://media.cntraveler.com/photos/5b47bf2c4b1b564ac0e61d76/16:9/w_1648,h_927,c_limit/CNT_Intel_Plane%20Tickets_072018_TM%20Detwiler.jpg">
-                <h2>Tickets</h2>
+                <h2>Tickets</h2></a>
             </div>
-            <div><img class="cont" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR2FOkaP5n9Q2WSDzTI-D568ZSyrV9Qeocng&usqp=CAU">
-                <h2>Price</h2>
+            <div>
+                <a href="../hotels/hotels.php" style="color: black"><img class="cont" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR2FOkaP5n9Q2WSDzTI-D568ZSyrV9Qeocng&usqp=CAU">
+                <h2>Price</h2></a>
             </div>
         </div>
     </div>
@@ -194,8 +199,8 @@
     <div class="double">
         <div class="row-1">
             <div>
-                <img src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?cs=srgb&dl=pexels-sagui-andrea-618833.jpg&fm=jpg" alt="">
-                <h3>Climb the mountains</h3>
+                <a href="./Entertainments.html"><img src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?cs=srgb&dl=pexels-sagui-andrea-618833.jpg&fm=jpg" alt="">
+                <h3>Climb the mountains</h3></a>
             </div>
             <div>
                 <a href="./restaurants.html"><img src="https://shymbulak.com/_nuxt/img/food.0580d91.png" alt="">
@@ -205,16 +210,16 @@
     </div>
     <div class="single">
         <div>
-            <img src="https://w0.peakpx.com/wallpaper/378/981/HD-wallpaper-ski-resort-at-night-resort-fiery-dusk-beautiful-valley-mountain-village-evening-night-rest-lovely-romantic-view-sky-ski-winter-snow.jpg" alt="">
-            <h3>To spend the night</h3>
+            <a href="../hotels/hotels.php"><img src="https://w0.peakpx.com/wallpaper/378/981/HD-wallpaper-ski-resort-at-night-resort-fiery-dusk-beautiful-valley-mountain-village-evening-night-rest-lovely-romantic-view-sky-ski-winter-snow.jpg" alt="">
+            <h3>To spend the night</h3></a>
         </div>
         <div>
-            <img src="https://shymbulak.com/_nuxt/img/fly.10790df.png" alt="">
-            <h3>Ride on balloons</h3>
+            <a href="./Entertainments.html"><img src="https://shymbulak.com/_nuxt/img/fly.10790df.png" alt="">
+            <h3>Ride on balloons</h3></a>
         </div>
         <div>
-            <img src="https://shymbulak.com/_nuxt/img/night.c1b6669.png" alt="">
-            <h3>Go paragliding</h3>
+            <a href="https://www.welovealmaty.com/paragliding-almaty.html"><img src="https://shymbulak.com/_nuxt/img/night.c1b6669.png" alt="">
+            <h3>Go paragliding</h3></a>
         </div>
     </div>
 </div>

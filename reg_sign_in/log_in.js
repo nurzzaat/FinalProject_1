@@ -4,53 +4,57 @@ const form = document.querySelector("form"),
     passField = form.querySelector("#password"),
     passInput = passField.querySelector("input");
 
-form.onsubmit = (e)=>{
+form.onsubmit = (e) => {
     e.preventDefault();
     (emailInput.value === "") ? emailField.classList.add("error") : checkEmail();
     (passInput.value === "") ? passField.classList.add("error") : checkPass();
 
-    emailInput.onkeyup = ()=>{checkEmail();}
-    passInput.onkeyup = ()=>{checkPass();}
+    emailInput.onkeyup = () => {
+        checkEmail();
+    }
+    passInput.onkeyup = () => {
+        checkPass();
+    }
 
-    function checkEmail(){
+    function checkEmail() {
         let pattern = new RegExp('^[^ ]+@[^ ]+\\.[a-z]{2,3}$');
-        if(!emailInput.value.match(pattern)){
+        if (!emailInput.value.match(pattern)) {
             emailField.classList.add("error");
             emailField.classList.remove("valid");
             let errorTxt = emailField.querySelector(".error-txt");
             (emailInput.value !== "") ? errorTxt.innerText = "Enter a valid email address" : errorTxt.innerText = "Email can't be empty";
-        }else{
+        } else {
             emailField.classList.remove("error");
             emailField.classList.add("valid");
         }
     }
 
-    function checkPass(){
-        if(passInput.value === ""){
+    function checkPass() {
+        if (passInput.value === "") {
             passField.classList.add("error");
             passField.classList.remove("valid");
-        }else{
+        } else {
             passField.classList.remove("error");
             passField.classList.add("valid");
         }
     }
 }
 
-function log_php(lastEmail, lastPassword){
+function log_php(lastEmail, lastPassword) {
     $.ajax({
         url: 'bonus.php',
         type: 'POST',
         data: {email: lastEmail, password: lastPassword},
-        success: function (result){
-            sessionStorage.setItem('current_user',result);
-            if(result !== ""){
-                window.alert("Welcome " + result);
-            }
-            else window.alert("Wrong login or password");
+        success: function (result) {
+            sessionStorage.setItem('curr_user', result);
+            if (result !== "Wrong data!") {
+                window.location.replace('../secondPage/homepage.html');
+            } else window.alert("Wrong login or password");
         },
-        error: function (){
-            console.log ('error');
+        error: function () {
+            console.log('error');
             window.alert("errr");
         }
     });
 }
+

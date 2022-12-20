@@ -8,22 +8,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <link rel="stylesheet" href="./restaurants.css">
     <link rel="stylesheet" href="./Header_with_footer.css">
+    <link rel="stylesheet" href="./restaurants.css">
 
-    <script src="./homepage.js"></script>
     <script src="./restaurants.js"></script>
 
-
 </head>
-<body>
+<body onload="checkUser()">
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="./homepage.html">Main</a>
     <a href="./restaurants.html">Restaurant</a>
-    <a href="ticket.html">Tickets</a>
+    <a href="./ticket.html">Tickets</a>
     <a href="./Entertainments.html">Entertainments</a>
-    <a href="./hotels.html">Hotel</a>
+    <a href="../hotels/hotels.php">Hotel</a>
+
     <a href="about_us.html">Info</a>
 </div>
 <span class="header">
@@ -35,16 +34,15 @@
                                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaiibfj8vazQvlEDPUJzC36huDhRhzUn048J56c0mlIZfGqkqQ3KKvcfJcdRLX0vT3_4M&usqp=CAU">A I</li>
     </div>
     <div class="id">
-        <li class="log-in"><a href="">Nurzat Tynyshbekov<span class="smile">&#9786;</span></a></li>
+        <li class="log-in"><a href=""><span id="curr_user"></span><span class="smile">&#9786;</span></a></li>
     </div>
 </span>
-
 <div class="Newsid">Restaurants</div>
 
 <div class="news_wrapper">
     <a href="#" class="hotel-link" id="id1" onclick="callHotel(id)">
         <div class="one_hotel">
-            <img src="https://cdn.shymbulak-dev.com/media/01cc68c90495bcf35af0d9a51e452607.png" alt="photo">
+            <img src="https://abr.kz/storage/app/uploads/public/635/8c5/ec5/6358c5ec51f37991756879.jpg" alt="photo">
             <div class="hotel-data">
                 <div class="hotel-data-desc">S.N.e.G.</div>
                 <div class="hotel-data-les">from 5 500 ₸</div>
@@ -90,8 +88,8 @@
             </div>
         </div>
     </a>
-    <a href="#" class="hotel-link">
-        <div class="one_hotel" id="id6" onclick="callHotel(id)">
+    <a href="#" class="hotel-link" id="id6" onclick="callHotel(id)">
+        <div class="one_hotel" >
             <img src="https://cdn.shymbulak-dev.com/media/03c5d0ee9e8a2a4e61a58c222b91d7d5.png"
                  alt="photo">
             <div class="hotel-data">
@@ -129,7 +127,6 @@
         </div>
     </a>
 </div>
-
 <footer>
     <div class="f-1">
         <div>
@@ -191,5 +188,7 @@
         </div>
     </div>
 </footer>
+
+<script src="./homepage.js"></script>
 </body>
 </html>

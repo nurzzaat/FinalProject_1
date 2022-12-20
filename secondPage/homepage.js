@@ -47,3 +47,7 @@ function openNav() {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
   }
+
+function checkUser() {
+  document.getElementById('curr_user').innerHTML = sessionStorage.getItem('curr_user');
+}

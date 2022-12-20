@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InRestaurants</title>
-    <link rel="stylesheet" href="./Header_with_footer.css">
     <script src="./restaurants.js"></script>
-    <link rel="stylesheet" href="inrestaurants.css">
     <script src="./inrestaurants.js"></script>
-    <script src="./homepage.js"></script>
+    <link rel="stylesheet" href="./Header_with_footer.css">
+
+    <link rel="stylesheet" href="./inrestaurants.css">
+    <link rel="stylesheet" href="./restaurants.css">
+    <link rel="stylesheet" href="./ticket.css">
 
 </head>
-<body onload="hotel()">
+<body onload="hotel(), checkUser()">
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="./homepage.html">Main</a>
     <a href="./restaurants.html">Restaurant</a>
-    <a href="ticket.html">Tickets</a>
+    <a href="./ticket.html">Tickets</a>
     <a href="./Entertainments.html">Entertainments</a>
-    <a href="./hotels.html">Hotel</a>
+    <a href="../hotels/hotels.php">Hotel</a>
+
     <a href="about_us.html">Info</a>
 </div>
 <span class="header">
@@ -31,79 +34,100 @@
                                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaiibfj8vazQvlEDPUJzC36huDhRhzUn048J56c0mlIZfGqkqQ3KKvcfJcdRLX0vT3_4M&usqp=CAU">A I</li>
     </div>
     <div class="id">
-        <li class="log-in"><a href="">Nurzat Tynyshbekov<span class="smile">&#9786;</span></a></li>
+        <li class="log-in"><a href=""><span id="curr_user"></span><span class="smile">&#9786;</span></a></li>
     </div>
 </span>
-
-<div class="Newsid">Restaurants</div>
-
-<div class="news_container">
-    <div class="news">
-        <img id="news_image" src="https://www.datocms-assets.com/55179/1647270109-cf6523a1a5ff-img_5012.jpg">
-        <div class="hotel-data">
-            <div class="hotel-data-desc"><p>Lorem ipsum dolor sit amet. Hic magni quas a unde odio et sequi quod. Qui
-                corporis voluptatum ut dignissimos dolore id praesentium fugit est laboriosam accusantium. Non
-                reprehenderit itaque qui velit expedita id tempora neque At blanditiis corporis sed blanditiis cumque.
-                Et ratione harum in libero delectus et maxime tempora eos modi ipsam. Qui facilis nobis ut voluptatem
-                perspiciatis At unde excepturi sed odio veniam qui vitae minima id asperiores sunt. </p>
-                <p>Est velit impedit non laborum adipisci hic distinctio architecto ad corrupti numquam sit omnis
-                    consequatur. Ad saepe galisum qui facilis dicta et omnis repellat ea eaque vitae sit harum odit et
-                    dolore iste. Ab quia mollitia a velit aspernatur qui beatae cupiditate ut consequatur nemo. Et animi
-                    voluptatem eos quos ipsam ad perspiciatis beatae et molestiae nostrum aut nulla ratione qui fugit
-                    similique. Ut quos cupiditate et aperiam perspiciatis ut consequatur saepe. Et quibusdam
-                    exercitationem ut error ipsam sed repellendus esse rem debitis nobis. Ut illum animi ut esse dolor
-                    eum magnam eaque et labore voluptatibus vel adipisci laboriosam. Cum quis suscipit ea impedit
-                    explicabo sed culpa labore non laborum omnis sit dolorem beatae qui quasi neque et enim explicabo.
-                    At quidem illum hic incidunt aperiam eos natus veniam. </p>
-                <p>Et esse tenetur non dolor ratione est perferendis necessitatibus a error enim in molestiae debitis
-                    qui tempore fugiat. Et quis ullam sit obcaecati nihil et perspiciatis autem. Non omnis illo et ipsa
-                    autem cum dolorem galisum et sapiente nobis sit voluptatum sapiente non quis soluta. Id impedit
-                    consequatur a aliquid sapiente aut maxime veniam sed quaerat voluptas cum consectetur rerum ea
-                    voluptatem fugiat qui incidunt alias. Nam maiores modi et quia omnis aut nemo labore id excepturi
-                    odio cum corrupti ullam sed corporis iusto est sequi voluptatem. A consequatur rerum in debitis
-                    veniam sit aliquid mollitia eum nihil debitis At assumenda expedita ut velit nihil. Non soluta
-                    laudantium a obcaecati molestiae est neque autem. Ut aliquid dolores qui consequatur quisquam aut
-                    dolore expedita non sunt quia sit vitae iusto non rerum laudantium. At repellendus cupiditate et
-                    voluptas molestiae sit dolores inventore qui assumenda illum! </p>
-                <blockquote cite="https://www.loremipzum.com">Aut earum quibusdam est eveniet recusandae vel rerum
-                    ratione ut incidunt quisquam et numquam galisum?
-                </blockquote>
-
-            </div>
+<div class="certain_hotel_wrapper">
+    <h4><a href="./restaurants.html"> Restaurants</a> <a id="restaurants_name">/ Kolsay Lakes Town</a></h4>
+    <div class="about_hotel">
+        <div class="about_images">
+            <img src="https://abr.kz/storage/app/uploads/public/635/8c5/ec5/6358c5ec51f37991756879.jpg" alt="photo" id="restaurants_image">
         </div>
-    </div>
-
-    <div class="more">
-        <a class="nuxt-link-active">
-            <div class="span">Other news</div>
-        </a>
-        <div class="more-news">
-            <div class="news-items">
-                <a class="news-item nuxt-link-active">
-                    <div class="date lit">09.11.22</div>
-                    <hr>
-                    <a href="#" id="id3" onclick="callHotel(id)">
-                        <div class="name">What Is a Season Pass?</div>
-                    </a>
-                </a>
+        <div class="about_data">
+            <div class="about_info">
+                <div class="about_info_hotel">
+                    <h2>About restaurants</h2>
+                    <h4 id="restaurants_description">Situated in Gornyy Gigant, within 2.8 km of Kasteev State Museum of Arts and 3.1 km of Atakent-Expo, Kolsay Lakes Town features accommodation with a restaurant. The property is around 3.3 km from Almaty Central Stadium, 4 km from Dolphin Entertainment Centre and 4.5 km from Botanical Garden. The hotel has family rooms.
+                        Abay Opera House is 4.9 km from the hotel, while Ascension Cathedral is 5.1 km from the property. The nearest airport is Almaty International Airport, 19 km from Kolsay Lakes Town.
+                    </h4>
+                </div>
+                <div class="about_info_contact">
+                    <h2>Contacts</h2>
+                    <ul>
+                        <li>
+                            <div class="contact-img">
+                                <img src="https://shymbulak.com/_nuxt/img/inst.c237746.svg" alt="">
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights" id="restaurants_name_ins">Tenir Eco Hotels</a>
+                        </li>
+                        <li>
+                            <div class="contact-img">
+                                <img src="https://shymbulak.com/_nuxt/img/location.156179b.svg" alt="">
+                            </div>
+                            <a id="restaurants_location">г. Алматы, ул. Керей-Жанибек хандар, д. 558/1</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about_info_advantages">
+                    <h2>Advantages</h2>
+                    <div class="features">
+                        <div class="one_feature">
+                            <div class="feature_img">
+                                <img src="https://cdn.shymbulak-dev.com/media/06b659accde306a99c25c0f417108f26.svg" alt="photo">
+                            </div>
+                            <h4>Wi-Fi</h4>
+                        </div>
+                        <div class="one_feature">
+                            <div class="feature_img">
+                                <img src="https://cdn.shymbulak-dev.com/media/d5d5cb13296c98c589a1ed49d040152a.svg" alt="photo">
+                            </div>
+                            <h4>Restaurant</h4>
+                        </div>
+                        <div class="one_feature">
+                            <div class="feature_img">
+                                <img src="https://cdn.shymbulak-dev.com/media/454f145949c7892779cf79a4b41d9f5d.svg" alt="photo">
+                            </div>
+                            <h4>Breakfast</h4>
+                        </div>
+                        <div class="one_feature">
+                            <div class="feature_img">
+                                <img src="https://cdn.shymbulak-dev.com/media/d5d5cb13296c98c589a1ed49d040152a.svg" alt="photo">
+                            </div>
+                            <h4>Bar</h4>
+                        </div>
+                        <div class="one_feature">
+                            <div class="feature_img">
+                                <img src="https://cdn.shymbulak-dev.com/media/cbb022dd654def77276a6992d65a00fb.svg" alt="photo">
+                            </div>
+                            <h4>ТV</h4>
+                        </div>
+                        <div class="one_feature">
+                            <div class="feature_img">
+                                <img src="https://cdn.shymbulak-dev.com/media/675c8fcf3e03c5043a52a990754221ce.svg" alt="photo">
+                            </div>
+                            <h4>Panarama</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="news-items">
-                <a class="news-item nuxt-link-active">
-                    <div class="date lit">09.11.22</div>
-                    <hr>
-                    <a href="#" id="id4" onclick="callHotel(id)">
-                        <div class="name">Season is open!</div>
-                    </a>
-                </a>
-            </div>
-            <div class="news-items">
-                <a class="news-item nuxt-link-active">
-                    <div class="date lit">09.11.22</div>
-                    <hr>
-                    <a href="#" id="id6" onclick="callHotel(id)">
-                        <div class="name">How to Prepare for Skiing/Snowboarding</div>
-                    </a>
-                </a>
+            <div class="tariffs_wrapper">
+                <div class="tariffs">
+                    <div class="tariffs_container">
+                        <div class="one_tariff">
+                            <div class="tariff_img">
+                                <img id="restaurants_room" src="https://cdn.shymbulak-dev.com/media/77e44272317a8a600581577402657bd8.png" alt="deluxe">
+                            </div>
+                            <span class="title" id="Title">Делюкс</span>
+                            <h4 id="restaurants_room_description">Размещение подходит для 2 взрослых и 1 ребенка (от 8 до 14 лет) на доп. месте. Завтрак включен в стоимость.</h4>
+                            <ul>
+                                <li id="restaurants_rooms_person">
+                                    <img src="https://shymbulak.com/_nuxt/img/persons.ad2b739.svg" alt="size">
+                                    Гостей: 2
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -169,5 +193,8 @@
         </div>
     </div>
 </footer>
+
+<script src="./inrestaurants.js"></script>
+<script src="./homepage.js"></script>
 </body>
 </html>
