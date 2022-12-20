@@ -17,6 +17,7 @@
 body{
     font-family: "Inter Regular", sans-serif;
     font-style: normal;
+    margin: 8px;
 }
 
 
@@ -39,7 +40,6 @@ body{
 }
 
 .news_wrapper .hotel-link .one_hotel{
-    cursor: pointer;
     width: 100%;
 }
 

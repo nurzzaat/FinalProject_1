@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Info</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <link rel="stylesheet" href="./Header_with_footer.css">
-    <link rel="stylesheet" href="about_us_styles.css">
+    <link rel="stylesheet" href="./about_us_styles.css">
+    <link rel="stylesheet" href="ticket.css">
     <script src="./homepage.js"></script>
 </head>
 <body>
@@ -12,10 +18,10 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="./homepage.html">Main</a>
     <a href="./restaurants.html">Restaurant</a>
-    <a href="./ticket.html">Tickets</a>
+    <a href="ticket.html">Tickets</a>
     <a href="./Entertainments.html">Entertainments</a>
     <a href="./hotels.html">Hotel</a>
-    <a href="./about_us.html">Info</a>
+    <a href="about_us.html">Info</a>
 </div>
 <span class="header">
     <div>
@@ -26,100 +32,102 @@
                                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaiibfj8vazQvlEDPUJzC36huDhRhzUn048J56c0mlIZfGqkqQ3KKvcfJcdRLX0vT3_4M&usqp=CAU">A I</li>
     </div>
     <div class="id">
-        <li class="log-in"><a href="">Nurzat Tynyshbekov</a></li>
+        <li class="log-in"><a href="">Nurzat Tynyshbekov<span class="smile">&#9786;</span></a></li>
     </div>
 </span>
-<div class="wrapper">
-    <h1>About us</h1>
+<div class="wrapper"><h1>About us</h1>
     <div class="picture"></div>
     <div class="info">
-        <div class="text">
-            <p class="orta">abr - это более 15 ресторанных концепций,<br>
-                раскрывающих новые грани вкуса.</p>
-            <p class="grey">50 ресторанов, 1500 сотрудников, 7 миллионов гостей в год. Это лишь малая часть 10-летнего
-                опыта компании abr в ресторанной индустрии. Начав с пивного ресторана “Бочонок”, мы трансформировались в
-                сообщество людей, которые двигают вперед гастрономическую культуру Казахстана. Новаторские концепции
-                ресторанов и ужинов, фестивали, сотрудничество с топовыми мировыми шефами и бартендерами, а также
-                бесконечное обновление и поиск новых идей - мы те, кто задает тренды.</p>
-            <div class="quote">
-                <img class="open"
-                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCmqw5zQRyATNsb_pCfszzKHEYa31bSpRgvw&usqp=CAU">
-                <p class="quote_text">
-                    «Мне хочется поделиться с вами тем, что сейчас действительно важно для нас: мы основали эту компанию
-                    с особой целью - делать жизнь лучше. abr - это не просто ресторанный бизнес. Это тонкий и невероятно
-                    интересный процесс, через который мы транслируем свои ценности и большую цель - делиться вкусом к
-                    жизни через вкус к еде. Я всегда полагал, что это важно – доверять своему чутью и следовать зову
-                    сердца, и я безмерно рад, что в этом мы схожи с каждым нашим сотрудником и гостем» - рассказывает
-                    основатель сети Аскар Байтасов.
-                    <img align="right" class="close"
-                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCmqw5zQRyATNsb_pCfszzKHEYa31bSpRgvw&usqp=CAU"
-                         alt="">
-                </p>
-            </div>
-            <p class="grey">Сегодня гастрономия - это отдельная культура, которая легко переплетается со всеми сферами
-                нашей жизни. Она влияет на город, искусство, моду и многое другое, и мы доказываем это своими проектами.
-                Легко сплетая урбанистику и рестораторство, мы рассказываем истории через проекты вроде Urbanitarium.
-                Задумываясь о будущем нашего города и планеты, мы внедряем инициативу Go Green.</p>
+        <div class="text"><p class="orta">We are The Tourism Company</p>
+            <p class="grey">…a Qazaq-based boutique management consulting firm specializing in the tourism industry. We
+                have worked with private, public and non-governmental (NGO) organizations to achieve success in the
+                tourism industry since 1994. Working collaboratively with clients, The Tourism Company provides a range
+                of tourism industry consulting services. The three partners — D’Arcy McKittrick, Mike Robbins and Jill
+                Vandal are each highly qualified professional consultants with a global network of land planning,
+                landscape architecture, heritage planning, cultural experience planning, engineering, architectural and
+                design associates. Each Partner brings distinct individual expertise and background to the company
+                providing a unique mix of tourism consulting skills. Recognized as one of Canada’s leading tourism
+                consulting firms, the partners have worked in all Canadian provinces and territories and in a broad
+                range of international destinations including the United States, Portugal, Montenegro, Bolivia, New
+                Zealand, Morocco, the UAE and Jamaica.</p>
+            <div class="quote"><img class="open"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCmqw5zQRyATNsb_pCfszzKHEYa31bSpRgvw&usqp=CAU">
+                <p class="quote_text"> Firstly, we are dedicated to servicing only the fields in which we feel expert –
+                    tourism. We follow our knowledge, our experience and our interests seeking clients with matching
+                    needs. Secondly, the individual areas of expertise of each of our Partners combine to create a
+                    company greater than the sum of its parts. While each of us shares a passion for the tourism
+                    industry we each bring individual talents, insights and experience to the task. The third factor of
+                    our success is our commitment to being actively involved with our clients and each project, as one
+                    or more of the Partners are the ones doing the work. For every project you see listed, one or all of
+                    us have been actively involved. We bring that expertise to every project we are involved in. <img
+                            align="right" class="close"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCmqw5zQRyATNsb_pCfszzKHEYa31bSpRgvw&usqp=CAU"
+                            alt=""></p></div>
         </div>
-        <div class="numbers">
-            <h1>10</h1>
+        <div class="numbers"><h1>5</h1>
             <p>years</p>
-            <h1>50</h1>
-            <p>restaurants</p>
-            <h1>7</h1>
-            <p>million guests</p>
-        </div>
+            <h1>64</h1>
+            <p>trips</p>
+            <h1>10 000+</h1>
+            <p>guests</p></div>
     </div>
 </div>
+
 <footer>
     <div class="f-1">
         <div>
             <b>Our restaurants</b><br><br>
-            <li><a href="">Oblaka restobar</a></li>
-            <li><a href="">Base camp Yurta</a></li>
-            <li><a href="">Marrone Rosso</a></li>
-            <li><a href="">Saray bar</a></li>
-            <li><a href="">Paul</a></li>
-            <li><a href="">Rifugio del Monte</a></li>
+            <li>S.N.e.G.</li>
+            <li>Chalet</li>
+            <li>Assorti</li>
+            <li>Oblaka restobar</li>
+            <li>Base camp Yurta</li>
+            <li>Marrone Rosso</li>
+            <li>Saray bar</li>
+            <li>Paul</li>
+            <li>Rifugio del Monte</li>
         </div>
         <div>
             <b>Hotels</b><br><br>
-            <li><a href="">Tenir Eco Hotels</a></li>
-            <li><a href="">S.N.e.G.</a></li>
-            <li><a href="">Base camp Yurta</a></li>
-            <li><a href="">Bianca high-mountain chalets</a></li>
-            <li><a href="">Shymbulak Resort Hotel</a></li>
+            <li>Kolsay Lakes Town</li>
+            <li>Manor Kolsay</li>
+            <li>Kolsay Grand</li>
+            <li>Kolsay Nomads</li>
+            <li>Tau Kolsay</li>
         </div>
     </div>
     <div class="f-1">
         <div>
             <b>Entertainments</b><br><br>
-            <li><a href="">Alpine park</a></li>
-            <li><a href="">Paraplane</a></li>
-            <li><a href="">Snowmobile and ATV rides</a></li>
-            <li><a href="">Horse rides</a></li>
-            <li><a href="">Rope park Medeu</a></li>
-            <li><a href="">Gorilla Zipline</a></li>
-            <li><a href="">Rope park Shymbulak</a></li>
-            <li><a href="">Balloon track</a></li>
+            <li>Alpine park</li>
+            <li>Paraplane</li>
+            <li>Snowmobile and ATV rides</li>
+            <li>Horse rides</li>
+            <li>Rope park Medeu</li>
+            <li>Gorilla Zipline</li>
+            <li>Rope park Shymbulak</li>
+            <li>Balloon track</li>
 
         </div>
         <div>
             <b>Contact us</b><br><br>
-            <a href="">E-Mail: orta@edu.kz</a><br><br>
-            <a href="">Phone number: +7 727 331 77 77</a><br><br>
-            <a href="">Address: st. Kerey, Zhanibek Khandar 558/1, Almaty</a><br><br>
+            <li>E-Mail: kolsay@gmail.kz</li>
+            <br>
+            <li>Phone number: +7 727 331 77 77</li>
+            <br>
+            <li>Address: st. Kerey, Zhanibek Khandar 558/1, Almaty</li>
+            <br>
             <div>
-                    <span><a href=""><img
-                            src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/facebook-132.png"
-                            width="35"></a></span>
-                <span><a href=""><img
+                <span><a href="https://www.facebook.com/"><img
+                        src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/facebook-132.png"
+                        width="35"></a></span>
+                <span><a href="https://twitter.com/?lang=en"><img
                         src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/twitter-158.png"
                         width="35"></a></span>
-                <span><a href=""><img
+                <span><a href="https://www.instagram.com/"><img
                         src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/instagram-47.png"
                         width="35"></a></span>
-                <span><a href=""><img
+                <span><a href="https://www.youtube.com/"><img
                         src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/youtube-117.png"
                         width="35"></a></span>
             </div>

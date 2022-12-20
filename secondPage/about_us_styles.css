@@ -1,25 +1,17 @@
-body {
-    font-family: "Lato", sans-serif;
-    transition: background-color .5s;
-}
 
 a {
     text-decoration: none;
 }
 
-li {
-    list-style-type: none;
-}
 
 * {
     box-sizing: border-box
 }
+
 .wrapper {
     width: 100%;
     height: auto;
     padding: 3%;
-    /*background-color: #f1eb89;*/
-    /*background-image: linear-gradient(45deg, #f1eb89 17%, #26a2c2 65%);*/
 }
 
 .wrapper h1 {
@@ -29,8 +21,8 @@ li {
 
 .picture {
     width: 100%;
-    height: 50vh;
-    background-image: url("https://img.freepik.com/premium-photo/kolsay-lake-mountain-lake-kazakhstan_160321-495.jpg?w=2000");
+    height: 30vw;
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/cd/e4/65/caption.jpg?w=1200&h=-1&s=1");
     background-position: 50%;
     background-size: cover;
     border-radius: 20px;
@@ -81,22 +73,56 @@ li {
 .numbers {
     width: 30%;
     height: auto;
-    background-color: bisque;
+    background-color: rgba(36, 192, 239, 0.853);
     border-radius: 10px;
     padding: 2%;
-    margin-top: 6%;
+    margin: 8% 0;
 }
 
 .numbers h1 {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 700;
     letter-spacing: -.02em;
-    line-height: 80px;
+    line-height: 70px;
+    color: white;
 }
 
 .numbers p {
     font-size: 30px;
     font-weight: 500;
     line-height: 37px;
-    color: #363636;
+    color: #ecececeb;
 }
+@media (max-width:700px){
+    .info{
+        flex-wrap: wrap;
+    }
+    .numbers{
+        width: auto;
+        margin: auto;
+    }
+    .text{
+        margin: auto;
+    }
+}
+.picture {
+    box-shadow: 0px 2px 7px #000000ae;
+    transition: .3s;
+}
+
+.picture:hover {
+    box-shadow: 0px 7px 14px #8fc9f5f2;
+    transform: scale(1.05, 1.05);
+}
+.numbers {
+    box-shadow: 0px 2px 7px #000000ae;
+    transition: .3s;
+}
+
+.numbers:hover {
+    box-shadow: 0px 7px 14px #8fc9f5f2;
+    transform: scale(1.15, 1.15);
+}
+
+
+  
