@@ -28,6 +28,55 @@ body {
     transition: background-color .5s;
 }
 
+.animate {
+    animation-duration: 0.1ms;
+    animation-name: animate-fade;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+    animation-fill-mode: backwards;
+}
+.animate.blur {
+    animation-name: animate-blur;
+}
+
+@keyframes animate-blur {
+    0% {
+        opacity: 0;
+        filter: blur(15px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+.wiggle:hover {
+    animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+    0%{
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-5deg);
+    }
+    20% {
+        transform: rotateZ(5deg);
+    }
+    25% {
+        transform: rotateZ(-5deg);
+    }
+    30% {
+        transform: rotateZ(1deg);
+    }
+    35% {
+        transform: rotateZ(-1deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+
 .slideshow-container {
     width: 95%;
     height: auto;
